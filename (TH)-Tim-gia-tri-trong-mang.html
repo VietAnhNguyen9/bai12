@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let value=+prompt('Nhập giá trị');
+  let numbers=[1,4,2,7,9,5];
+  let index=-1;
+  for(i=0;i<numbers.length;i++){
+    if(value==numbers[i]){
+      index=i;
+    }
+  }
+  if(index>-1){
+    alert(value+' là giá trị trong mảng');
+  }else{
+    alert(value+ ' không là giá trị trong mảng');
+  }
+
+
+</script>
+</html>

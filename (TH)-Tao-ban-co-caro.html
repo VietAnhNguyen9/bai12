@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc hanh</title>
+</head>
+<body>
+<div id="result"></div>
+<button onclick="data()">Change Value</button>
+</body>
+<script>
+    let x;
+    let y;
+
+    let arr =[];
+    for(let i=0;i<5;i++){
+        arr[i]=[]
+        for(let j=0;j<5;j++){
+            arr[i][j]=0;
+        }
+    }
+    show()
+
+    function show(){
+        let str = "<table> "
+        for(let i = 0; i < arr.length; i++){
+            str += "<tr>"
+            for(let j = 0; j < arr[i].length; j++){
+                str+= "<td> " + arr[i][j]+"</td>"
+            }
+            str+= "</tr>"
+        }
+        str+= "</table>"
+        document.write(str)
+    }
+
+function data(){
+         x = +prompt('Nhập giá trị x');
+         y = +prompt('Nhập giá trị y');
+         arr[x][y] ="x";
+         show()
+
+}
+
+
+
+</script>
+</html>
